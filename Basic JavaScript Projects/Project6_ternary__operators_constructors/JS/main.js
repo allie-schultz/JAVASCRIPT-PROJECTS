@@ -22,7 +22,7 @@ function Vehicle(Make, Model, Year, Color) {
     this.Vehicle_Year = Year;
     this.Vehicle_Color = Color;
 }
-var Jack = new Vehicle("Dodge", "Vipere", 2020, "Red");
+var Jack = new Vehicle("Dodge", "Viper", 2020, "Red");
 var Emily = new Vehicle("Jeep", "Trail Hawk", 2019, "White and Black");
 var Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard");
 function myFunction(){
@@ -30,3 +30,25 @@ function myFunction(){
     "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model +
     " manufactured in " + Erik.Vehicle_Year;
 }
+
+// new keyword assignment
+var Allie = new Vehicle("Ford", "Focus", 2001, "White");
+function newFunction(){
+    document.getElementById("New_and_This").innerHTML =
+    "Allie's car is a " + Allie.Vehicle_Year + " " + Allie.Vehicle_Make + 
+    " " + Allie.Vehicle_Model + " in the color white."
+}
+
+// reserved keyword challenge
+//tried and caused error that ruins page
+
+//constructor challenge
+class FordCars {
+    constructor(car) {
+    this.make = "Ford";
+    this.model = car;
+    }
+}
+var Person = new FordCars("Mustang");
+document.write("I want a " + Person.make + " " + Person.model);
+
