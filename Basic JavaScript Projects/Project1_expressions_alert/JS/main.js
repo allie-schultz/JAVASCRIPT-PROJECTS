@@ -12,10 +12,17 @@ alert(B);
 // escape character assignment
 document.write("<br>Lisa\'s mom said, \"Dinner is ready.\"");
 
-// concantenation assignment
+// concatenation assignment
 document.write("<br>Hello there," + " how has our day been?");
 
-//concantenation challenge
-var C = "<br>Coffee is a great beverage";
-var D = " for morning, noon, or even night.";
-document.write(C + D);
+//concatenation challenge
+var Sent1 = "<br>This is the beginning of the string";
+var Sent2 = " and this is the end of the string";
+document.write(Sent1 + Sent2); // concatenates two strings
+
+// multiple variable assignment 
+var pet = "Mori", type = "cat", breed = "tuxedo", age = "1 year", weight = "8 pounds"; 
+document.write("<br>" + pet); 
+
+// write an esxpression assignment
+let sum = 7 + 4; //add is a statement and 7 + 4 is the expression
