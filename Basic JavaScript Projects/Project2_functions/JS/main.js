@@ -10,3 +10,13 @@ function buttonText2(){
     text2 += " I said no buttons!"; // concatenate with opperand
     document.getElementById("paragraph_text").innerHTML = text2;
 }
+
+var num1 = 7;
+var num2 = 8;
+var product;
+function multiply() {
+    product = 7 * 8;
+    document.getElementById("multiply").innerHTML = "The product of " + num1 + " and " + num2 + " is: " + product;;
+}
+
+multiply();
