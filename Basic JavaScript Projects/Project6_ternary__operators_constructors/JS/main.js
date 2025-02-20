@@ -52,3 +52,14 @@ class FordCars {
 var Person = new FordCars("Mustang");
 document.write("I want a " + Person.make + " " + Person.model);
 
+// nested functions assignment
+function yay() {
+    document.getElementById("Nested_Functions").innerHTML = add_y();
+    function add_y() {
+        var exclaimation = "Yay";
+        function happy() {exclaimation += "y";}
+        happy();
+        return exclaimation;
+    }
+}
+
