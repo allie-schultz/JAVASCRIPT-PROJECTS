@@ -14,9 +14,10 @@ function buttonText2(){
 var num1 = 7;
 var num2 = 8;
 var product;
+
 function multiply() {
     product = 7 * 8;
-    document.getElementById("multiply").innerHTML = "The product of " + num1 + " and " + num2 + " is: " + product;;
+    document.getElementById("multiply").innerHTML = "The product of " + num1 + " and " + num2 + " is: " + product;
 }
 
 multiply();
