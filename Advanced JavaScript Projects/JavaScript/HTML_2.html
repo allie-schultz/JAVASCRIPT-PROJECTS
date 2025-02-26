@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JavaScript_2.js"></script>
+    <link rel="stylesheet" href="CSS/CSS_1.css">
+    <title>Contact Form</title>
+</head>
+
+<body>
+    <form action="" class="contact" method="post" onsubmit="return validate()" name="form">
+        <div class="card">
+            <h2>Contact Me</h2>
+            <div class="row">
+                
+                    <div class="field">
+                        <label class="label" for="name">Your Name</label>
+                        <input class="input" id="name" name="name" required />
+                    </div>
+                
+                
+                    <div class="field">
+                        <label class="label" for="email">Email</label>
+                        <input class="input" id="email" name="email" required />
+                        <p class="description">
+                            Don't worry, you won't get spammed.
+                        </p>
+                    </div>
+               
+                
+                    <div class="field">
+                        <label class="label" for="message">Message</label>
+                        <textarea class="textarea" id="message" name="message" required></textarea>
+                        <p class="description">What would you like to discuss?</p>
+                    </div>
+                
+                
+                    <div class="button-group">
+                        <button class="button" type="submit">Submit</button>
+                    </div>
+                
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+body {
+    font-family: "Figtree", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    border: 2px solid rgb(93, 91, 91);
+    border-radius: 20px;
+    padding: 20px;
+    width: 60vw;
+}
+
+.card h2 {
+    text-align: center;
+    font-size: 60px;
+    color: rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+}
+
+.field {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.label {
+    font-size: 20px;
+}
+.label, .description{
+    display: block;
+    text-align: center;
+    margin: 5px;
+}
+.description {
+    margin-bottom: 10px;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.button-group {
+    text-align: center;
+}
+
+.button {
+    border-radius: 20px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    width: 25%;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: whitesmoke;
+}
