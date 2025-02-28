@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function Challenge</title>
+<body>
+    <p id="para1"></p>
+    <p id="para2"></p>
+
+    <script>
+        var icecream = function ice_cream(flavors) {
+            return "I like the ice cream flavors " + flavors;
+        }
+        document.getElementById("para1").innerHTML = icecream("mint chip, chocolate, and chocolate peanut butter.");
+
+        var iceCream;
+        iceCream = (flavors) => "I like the ice cream flavors " + flavors;
+        document.getElementById("para2").innerHTML = icecream("mint chip, chocolate, and chocolate peanut butter.");
+        </script>
+    </head>
+</body>
+</html>
