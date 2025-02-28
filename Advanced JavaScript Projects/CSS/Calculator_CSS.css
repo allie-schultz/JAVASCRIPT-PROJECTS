@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+html {
+    font-size: 70%;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.calculator {
+    border: 1.2px solid darkslategrey;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.calculator-screen {
+    width: 100%;
+    font-family: "Jersey 15", sans-serif;
+    font-size: 5.5rem;
+    height: 80px;
+    border: none;
+    background-color: #FF881C;
+    color: black;
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 20px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+button {
+    height: 70px;
+    border-radius: 30px;
+    border: 2px solid #b75ffb;
+    font-family: "Jersey 15", sans-serif;
+    font-size: 3.8rem;
+    color: black;    
+    background-image: radial-gradient(circle, #ff3b5d, #ff2771, #ff0c88, #ff00a0, #ff00bb, #fb1acb, #f62bda, #ee39ea, #e145f0, #d350f4, #c558f8, #b75ffb);    
+    
+}
+
+button:hover {
+    filter: brightness(0.8);
+}
+
+.operator {
+    color: black;
+    border: 2px solid #1a60ff;
+    background-image: radial-gradient(circle, #b75ffb, #ad54fc, #a349fc, #983efd, #8b32fe, #7f35fe, #7238ff, #633aff, #5446ff, #4450ff, #3159ff, #1a60ff);
+}
+
+.all-clear {
+    background-image: radial-gradient(circle, #1affc3, #00ffb2, #00ff9e, #00ff87, #00ff6d, #34ff5d, #4cff4b, #60ff35, #7cff2c, #93ff25, #a8ff1e, #baff1a);
+    border-color: #baff1a;
+    color: black;
+}
+
+.equal-sign {
+    background-image: radial-gradient(circle, #1a60ff, #0078ff, #008dff, #009fff, #00b0ff, #00bdff, #00caff, #00d6ff, #00e2fb, #00edef, #00f7dc, #1affc3);
+    color: #fff;
+    border-color: #1affc3;
+    height: 100%;
+    grid-area: 2/4/6/5;
+}
+
+.equal-sign:hover {
+    filter: brightness(0.8);
+}
+
+.calculator-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+    
