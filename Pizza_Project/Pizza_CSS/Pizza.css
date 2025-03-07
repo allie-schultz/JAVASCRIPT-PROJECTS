@@ -1,3 +1,10 @@
+/* h1 font */
+@import url('https://fonts.googleapis.com/css2?family=Fascinate+Inline&display=swap');
+/* h3 font */
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+/* div font */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
 #menuBG {
     width: 400px;
     height: 470px;
@@ -46,4 +53,24 @@
     margin: 10px 0px 0px 100px;
     width: 100px;
     height: 40px;
+}
+
+/* CSS PIZZA MENU CHALLENGE */
+body {
+    background-color: #f3eed9;
+}
+
+h1 {
+    font-family: "Fascinate Inline", system-ui;
+    color: #902525;
+}
+
+h3 {
+    font-family: "Poiret One", sans-serif;
+    color: #57423f;
+}
+
+div {
+    font-family: "Quicksand", sans-serif;
+    color: #57423f;
 }
