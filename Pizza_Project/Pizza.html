@@ -10,7 +10,7 @@
 </head>
 <body>
     <div id="menuBG">
-        <h1 style="margin: 0 0px 0 20px;">Pizza Drill Tutorial</h1>
+        <h1 style="margin: 0 0px 30px 20px;">Pizza Drill Tutorial</h1>
         <input type="button" id="btnOrder" onclick="getReceipt()"
             value="Place Order">
         <form id="frmMenu">
@@ -27,7 +27,7 @@
                 <input type="radio" class="size" name="Size"
                     value="Extra Large Pizza">Extra Large Pizza<br>
              </div>
-             <div class="menu right">
+             <div class="menu middle">
                 <h3>Meats:</h3>
                 <input type="checkbox" class="toppings" name="Topping"
                     value="Pepperoni">Pepperoni<br>
@@ -43,6 +43,20 @@
                     value="Chicken">Chicken<br>
                 <input type="checkbox" class="toppings" name="Topping"
                     value="Bacon">Bacon<br>
+             </div>
+             <!-- ADDED VEGGIE TOPPINGS -->
+             <div class="menu right">
+                <h3>Veggies:</h3>
+                <input type="checkbox" class="toppings" name="Topping"
+                    value="Mushrooms">Mushrooms<br>
+                <input type="checkbox" class="toppings" name="Topping"
+                    value="Onions">Onions<br>
+                <input type="checkbox" class="toppings" name="Topping"
+                    value="Tomatoes">Tomatoes<br>
+                <input type="checkbox" class="toppings" name="Topping"
+                    value="Olives">Olives<br>
+                <input type="checkbox" class="toppings" name="Topping"
+                    value="Green Peppers">Green Peppers<br>
              </div>
              <div id="cart">
                 <div id="showText"></div>

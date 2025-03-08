@@ -6,14 +6,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 #menuBG {
-    width: 400px;
+    width: 600px;
     height: 470px;
     margin: 10px auto; 
 }
 
 #frmMenu {
-    width: 400px;
+    width: 600px;
     height: 200px;
+    margin-left: 50px;
+    margin-top: 30px;
 }
 
 #totalPrice {
@@ -22,16 +24,23 @@
     margin: 0 auto;
     float: right;
 }
-
+    
+    
 .left {
     width: 200px;
-    height: 200px;
+    height: 250px;
+    float: left;
+}
+
+.middle {
+    width: 200px;
+    height: 250px;
     float: left;
 }
 
 .right {
     width: 200px;
-    height: 200px;
+    height: 250px;
     float: right;
 }
 
@@ -50,9 +59,18 @@
 }
 
 #btnOrder {
-    margin: 10px 0px 0px 100px;
-    width: 100px;
-    height: 40px;
+    margin: 10px auto;
+    width: 150px;
+    height: 60px;
+    display: block;
+    background-color: #902525;
+    color: #fff;
+    letter-spacing: 2px;
+    border-radius: 30px;
+    border: 2px solid #902525;
+    font-family: "Poiret One", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 /* CSS PIZZA MENU CHALLENGE */
@@ -63,6 +81,8 @@ body {
 h1 {
     font-family: "Fascinate Inline", system-ui;
     color: #902525;
+    text-align: center;
+    font-size: 50px;
 }
 
 h3 {
@@ -73,4 +93,5 @@ h3 {
 div {
     font-family: "Quicksand", sans-serif;
     color: #57423f;
+    font-size: 20px;
 }
