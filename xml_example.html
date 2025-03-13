@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML_EXAMPLE</title>
+</head>
+<body>
+    <p id="XML_Example"></p>
+    <script>
+        var XML_Parser, XML_Document;
+
+        //creates test string
+        var Game = "<game>" +
+            "<title>Quatermain</title>" +
+            "<mechanic>Deck Building</mechanic>" +
+            "<players>1-4</players>" +
+            "<publisher>Cobblestone Games</publisher>" +
+            "</game>";
+
+        //create XML DOM parser
+        XML_Parser = new DOMParser();
+
+        //create new XML DOM object using the text string
+        XML_Document = XML_Parser.parseFromString(Game, "text/xml");
+
+        document.getElementById("XML_Example").innerHTML = 
+        XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+
+    </script>
+</body>
+</html>
