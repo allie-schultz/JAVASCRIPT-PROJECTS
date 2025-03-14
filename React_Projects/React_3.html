@@ -7,6 +7,18 @@
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+        /* for fade in challenge */
+        body {
+            opacity: 1;
+            transition: 2s opacity ease;
+        }
+
+        body.fade-out {
+            opacity: 0;
+            transition: none;
+        }
+    </style>
 </head>
 <body>
     <div id="JSX"></div>
@@ -19,6 +31,16 @@
         }
 
         ReactDOM.render(<Greeting />, document.getElementById('JSX'))
+
+    </script>
+    <script>
+        
+        //fade in challenge
+        document.body.classList.add('fade-out');
+
+        window.addEventListener('DOMContentLoaded', () => {
+            document.body.classList.remove('fade-out');
+        });
     </script>
 </body>
 </html>
