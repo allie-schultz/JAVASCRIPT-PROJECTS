@@ -63,6 +63,83 @@
         bottom: 10px; 
     }
 
+    /*sticky button challenge*/
+    #sticky {
+        position: sticky;
+        bottom: 10px;
+        left: 100%;
+        width: 100px;
+        height: 50px;
+        background-color: #8d8dee;
+        font-size: 20px;
+        border-radius: 20px;
+        border: 2px solid rgb(110, 13, 134);
+    }
+
+    </style>
+    <style>
+        * {box-sizing: border-box;}
+
+        .open_button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            position: fixed;
+            opacity: 0.8;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
+        }
+
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+        }
+
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .form-container input[type=text], .form-container input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+        }
+
+        .form-container .btn {
+            background-color: #08a9cd;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom: 10px;
+            opacity: 0.8;        
+        }
+
+        .form-container .cancel {
+            background-color: rgb(255, 123, 0);
+        }
+
+        .form-container .btn:hover, .open_button:hover {
+            opacity: 1;
+        }
     </style>
     
 </head>
@@ -95,6 +172,27 @@
         <div style="background-color: rgb(255, 0, 140);"></div>
         <div style="background-color: rgb(208, 0, 255);"></div>
         <div style="background-color: rgb(89, 0, 255);"></div>
+    </div>
+
+    <button id="sticky" onclick="openForm()">Contact</button>
+
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+            <h1>Contact</h1>
+
+            <label for="name">Name</label>
+            <input type="text" placeholder="Name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="msg">Message</label>
+            <input type="text" placeholder="message here" name="msg" required>
+
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel"
+            onclick="closeForm()">Close</button>
+        </form>
     </div>
 
     <script type="text/babel">
@@ -157,6 +255,17 @@
         .end()
         .appendTo('#slideshow');
     }, 3000);
+</script>
+
+<script>
+    //for pop up challenge
+    function openForm() {
+        document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+    }
 </script>
     
 </body>
