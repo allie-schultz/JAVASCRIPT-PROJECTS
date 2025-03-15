@@ -19,21 +19,56 @@
         opacity: 0;
         transition: none;
     }
+
+    /*smooth scroll challenge */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    #red, #orange, #yellow {
+        width: 100%;
+        height: 500px;
+        margin: 10px;
+    }
+
+    #red {
+        background-color: red;
+    }
+
+    #orange {
+        background-color: orange;
+    }
+
+    #yellow {
+        background-color: yellow;
+    }
+
     </style>
     
 </head>
 <body>
+    <ul>
+        <li><a href="#JSX">JSX HEADER</a></li>
+        <li><a href="#form">INFO FORM</a></li>
+        <li><a href="#red">RED DIV</a></li>
+        <li><a href="#orange">ORANGE DIV</a></li>
+        <li><a href="#yellow">YELLOW DIV</a></li>
+    </ul>
     <div id="JSX"></div>
 
     <br>
     <br>
-
+    <h1 id="form">Info</h1>
     <form id="validate" name="validate" method="post" onsubmit="return validateInput()">
         <input type="text" id="name" name="name" placeholder="Name" onchange="validateNum()"><br>
         <input id="phone" name="phone" placeholder="Phone Number">
         <button type="submit">Submit</button>
         <div id="validate_msg"></div>
     </form>
+
+    <div id="red"></div>
+    <div id="orange"></div>
+    <div id="yellow"></div>
 
     <script type="text/babel">
         class Greeting extends React.Component {
