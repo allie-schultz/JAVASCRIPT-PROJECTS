@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>React Assignment 3 - JSX</title>
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script crossorigin src="https://cdn.jsdelivr.net/npm/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://cdn.jsdelivr.net/npm/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone/babel.min.js"></script>
+   
     <style>
-        /* for fade in challenge */
-        body {
-            opacity: 1;
-            transition: 2s opacity ease;
-        }
+         /* for fade in challenge */
+    body {
+        opacity: 1;
+        transition: 2s opacity ease;
+    }
 
-        body.fade-out {
-            opacity: 0;
-            transition: none;
-        }
+    body.fade-out {
+        opacity: 0;
+        transition: none;
+    }
     </style>
+    
 </head>
 <body>
     <div id="JSX"></div>
-          
+
+    <br>
+    <br>
+
     <form id="validate" name="validate" method="post" onsubmit="return validateInput()">
         <input type="text" id="name" name="name" placeholder="Name" onchange="validateNum()"><br>
         <input id="phone" name="phone" placeholder="Phone Number">
@@ -37,46 +42,48 @@
             }
         }
 
-        ReactDOM.render(<Greeting />, document.getElementById('JSX'))
-
-    </script>
-    <script>
+         ReactDOM.render(<Greeting />, document.getElementById('JSX'))
         
-        //fade in challenge
-        document.body.classList.add('fade-out');
 
-        window.addEventListener('DOMContentLoaded', () => {
-            document.body.classList.remove('fade-out');
-        });
     </script>
-    <script>
-        //phone number validation challenge
-        function validateInput () {
-            let x = document.forms["validate"]["name"].value;
-            let y = document.forms["validate"]["phone"].value;
+   <script>
+        
+    //fade in challenge
+    document.body.classList.add('fade-out');
 
-            if (x == "" || y == "") {
-                alert("Please fill in empty fields");
-                return false;
-            }
-        }
-        function validateNum() {
-            const phoneNum = document.getElementById('phone').value.trim();
-            const pattern = /^\d{10}$/;
-            const isValid = pattern.test(phone);
-            document.getElementById('validate_msg').textContent = isValid ? '' :
-            "Please enter a valid 10-digit phone number.";
-            return isValid;
-        }
+    window.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.remove('fade-out');
+    });
+</script>
+<script>
+    //phone number validation challenge
+    function validateInput () {
+        let x = document.forms["validate"]["name"].value;
+        let y = document.forms["validate"]["phone"].value;
 
-            document.addEventListener('DOMContentLoaded', function() {
-                document.getElementById('validate').addEventListener('submit', function(event){
-                    if (!validateNum()) {
-                        event.preventDefault();
-                    }
-                });
+        if (x == "" || y == "") {
+            alert("Please fill in empty fields");
+            return false;
+        }
+    }
+    function validateNum() {
+        const phoneNum = document.getElementById('phone').value.trim();
+        const pattern = /^\d{10}$/;
+        const isValid = pattern.test(phone);
+        document.getElementById('validate_msg').textContent = isValid ? '' :
+        "Please enter a valid 10-digit phone number.";
+        return isValid;
+    }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('validate').addEventListener('submit', function(event){
+                if (!validateNum()) {
+                    event.preventDefault();
+                }
             });
-        
-    </script>
+        });
+    
+</script>
+    
 </body>
 </html>
