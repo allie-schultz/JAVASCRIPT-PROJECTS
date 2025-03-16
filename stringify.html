@@ -8,11 +8,24 @@
 <body>
     <h1>JavaScript JSON Stringify Assignment</h1>
     <p id="pet"></p>
+    <h1>JSON Parse Assignment</h1>
+    <p id="parse"></p>
+    <h1>Local Storage Assignment</h1>
+    <p id="storage"></p>
     <script>
+        //stringify
         var pet = {type: "cat", name: "Mori", breed: "tuxedo"};
         var myJSON = JSON.stringify(pet);
         document.getElementById('pet').innerHTML = myJSON;
 
+        //parse
+        var string = JSON.parse(myJSON);
+        document.getElementById('parse').innerHTML = string.name + " is a " +
+        string.breed + " " + string.type;
+
+        //localStorage
+        localStorage.setItem("name", "Mori");
+        document.getElementById('storage').innerHTML = localStorage.getItem("name");
     </script>
 </body>
 </html>
