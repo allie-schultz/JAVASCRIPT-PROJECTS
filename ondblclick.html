@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnDblClick Assignment</title>
+</head>
+<body>
+    <h3>Double-click the below paragraph:</h3>
+    <p id="paragraph" ondblclick="dblClick()">Double click me</p>
+
+    <script>
+        function dblClick() {
+           var para = document.getElementById('paragraph');
+           para.style.width = "200px";
+           para.style.textAlign = "center";
+           para.style.backgroundColor = "#B0A3D4";
+           para.style.color = "#65655E";
+           para.style.fontSize = "20px";
+        }
+    </script>
+</body>
+</html>
